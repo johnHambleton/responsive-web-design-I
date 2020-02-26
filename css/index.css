@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5 {
 
 nav a {
 	text-decoration: none;
-	color: lightgrey;
+	color: darkgrey;
 	/* border: 1px solid red; */
 }
 nav {
@@ -90,7 +90,8 @@ nav div {
 }
 #button {
 font-size: 20px;
-border: 2px solid black;
+border: 1px solid black;
+padding: 2% 15%;
 }
 
 h2{
@@ -147,5 +148,24 @@ h2 {
 }
 }
 @media (max-width: 500px){
-	
+	nav div {
+		flex-direction: column;
+		align-items: center;
+	}
+	nav div a {
+		width: 100%;
+		padding: 4% 0;
+		border-bottom: 1px solid grey;
+		text-align: center;
+		font-size: 150%;
+	}
+	.subsection1, .subsection2 {
+		display: block;
+	}
+	.subsection1 p, .subsection2 p {
+		margin-bottom: 10%;
+	}
+	h3 {
+		margin-top: 5%;
+	}
 }
